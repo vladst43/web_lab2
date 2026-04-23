@@ -4,69 +4,95 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My CV</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Vladyslav Storozhuk</h1>
-    <p>Student / Cybersecurity Specialist</p>
-    <p>Email: vladstor231205@gmail.com</p>
-    <p>
-      GitHub:
-      <a href="https://github.com/vladst43" target="_blank">github.com/vladst43</a>
-    </p>
-  </header>
-
-  <main>
-    <section>
-      <h2>About Me</h2>
+  <div class="cv">
+    <header id="main-header">
+      <h1>Vladyslav Storozhuk</h1>
+      <p class="subtitle">Student / Cybersecurity Specialist</p>
       <p>
-        I am a third-year Cybersecurity student at Lviv Polytechnic National University.
-        I am interested in web development and information security, especially web application security and cloud technologies.
-        I actively improve my skills through self-study, hands-on labs, and CTF challenges.
-        I enjoy teamwork and continuously work on developing both technical and soft skills.
+        Email:
+        <a href="mailto:vladyslav.storozhuk.kb.2023@lpnu.ua">vladyslav.storozhuk.kb.2023@lpnu.ua</a>
       </p>
-    </section>
-
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML, CSS, JavaScript (basic level)</li>
-        <li>Python and Bash (basic scripting and backend experience)</li>
-        <li>Git and GitHub</li>
-        <li>Linux fundamentals</li>
-        <li>Web security basics (Burp Suite, Nmap, SQLMap, etc.)</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Education</h2>
-      <p>Lviv Polytechnic National University</p>
-      <p>Bachelor's Degree in Cybersecurity</p>
-      <p>2023 – Present</p>
-    </section>
-
-    <section>
-      <h2>Experience</h2>
-      <ol>
-        <li>Worked on a team project as a backend developer using Flask</li>
-        <li>Developed scripts for automation and file handling</li>
-        <li>Performed basic security testing of web applications</li>
-        <li>Participated in CTF platforms such as TryHackMe and Hack The Box</li>
-      </ol>
-    </section>
-
-    <section>
-      <h2>Contact</h2>
-      <p>Email: vladyslav.storozhuk.kb.2023@lpnu.ua</p>
+      <p>
+        GitHub:
+        <a href="https://github.com/vladst43" target="_blank" rel="noopener noreferrer">
+          github.com/vladst43
+        </a>
+      </p>
       <p>
         LinkedIn:
-        <a href="https://www.linkedin.com/in/vladyslav-storozhuk-757b12306" target="_blank">Profile</a>
+        <a href="https://www.linkedin.com/in/vladyslav-storozhuk-757b12306" target="_blank" rel="noopener noreferrer">
+          Profile
+        </a>
       </p>
-    </section>
-  </main>
+    </header>
 
-  <footer>
-    <p>2026 © My Student CV</p>
-  </footer>
+    <div class="content">
+      <main>
+        <section class="block">
+          <h2>About Me</h2>
+          <p>
+            I am a third-year Cybersecurity student at Lviv Polytechnic National University.
+            I am interested in web development and information security, especially web application
+            security and cloud technologies.
+          </p>
+          <p>
+            I actively improve my skills through self-study, hands-on labs, and CTF challenges.
+            I enjoy teamwork and continuously work on developing both technical and soft skills.
+          </p>
+        </section>
+
+        <section class="block">
+          <h2>Experience</h2>
+          <div class="entry">
+            <h3>Backend Developer (Team Project)</h3>
+            <p class="meta">Flask / Python / Bash</p>
+            <ul>
+              <li>Worked on a team project as a backend developer using Flask.</li>
+              <li>Developed scripts for automation and file handling.</li>
+              <li>Performed basic security testing of web applications.</li>
+              <li>Participated in CTF platforms such as TryHackMe and Hack The Box.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="block">
+          <h2>Education</h2>
+          <div class="entry">
+            <h3>Lviv Polytechnic National University</h3>
+            <p>Bachelor's Degree in Cybersecurity</p>
+            <p class="meta">2023 – Present</p>
+          </div>
+        </section>
+      </main>
+
+      <aside>
+        <section class="block">
+          <h2>Skills</h2>
+          <ul>
+            <li>HTML, CSS, JavaScript (basic level)</li>
+            <li>Python and Bash</li>
+            <li>Git and GitHub</li>
+            <li>Linux fundamentals</li>
+            <li>Web security basics</li>
+            <li>Burp Suite, Nmap, SQLMap</li>
+          </ul>
+        </section>
+
+        <section class="block">
+          <h2>Contact</h2>
+          <p><strong>Email:</strong> vladyslav.storozhuk.kb.2023@lpnu.ua</p>
+          <p><strong>Phone:</strong> +38 (067) 382-41-30</p>
+          <p><strong>Location:</strong> Lviv, Ukraine</p>
+        </section>
+      </aside>
+    </div>
+
+    <footer>
+      <p>2026 © My Student CV</p>
+    </footer>
+  </div>
 </body>
 </html>
