@@ -9,6 +9,7 @@
 <body>
   <div class="cv">
     <header id="main-header">
+      <button id="themeToggle" class="theme-toggle" type="button">Switch Theme</button>
       <h1>Vladyslav Storozhuk</h1>
       <p class="subtitle">Student / Cybersecurity Specialist</p>
       <p>
@@ -59,6 +60,13 @@
         </section>
 
         <section class="block">
+          <h2>Employer Reviews</h2>
+          <div id="reviewsContainer" class="reviews-container">
+            <p>Loading reviews...</p>
+          </div>
+        </section>
+
+        <section class="block">
           <h2>Education</h2>
           <div class="entry">
             <h3>Lviv Polytechnic National University</h3>
@@ -91,8 +99,37 @@
     </div>
 
     <footer>
-      <p>2026 © My Student CV</p>
+      <p>2026 © My Student CV | Deployed with Vercel</p>
+      <div class="system-info">
+        <h2>System Info</h2>
+        <p><strong>Browser:</strong> <span id="browserInfo">Loading...</span></p>
+        <p><strong>Platform:</strong> <span id="platformInfo">Loading...</span></p>
+        <p><strong>Language:</strong> <span id="languageInfo">Loading...</span></p>
+      </div>
     </footer>
+
+    <div id="contactModal" class="modal hidden">
+      <div class="modal-content">
+        <button id="modalClose" class="modal-close" type="button" aria-label="Close contact form">&times;</button>
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/xrejlark" method="POST">
+          <label for="contactName">Name</label>
+          <input id="contactName" name="name" type="text" required>
+
+          <label for="contactEmail">Email</label>
+          <input id="contactEmail" name="email" type="email" required>
+
+          <label for="contactPhone">Phone</label>
+          <input id="contactPhone" name="phone" type="tel" required>
+
+          <label for="contactMessage">Message</label>
+          <textarea id="contactMessage" name="message" rows="5" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
