@@ -1,7 +1,7 @@
 function Header() {
   return (
     <header className="bg-slate-900 text-white p-8 rounded-t-2xl shadow-md">
-      <h1 className="text-4xl md:text-5xl font-bold tracking-wide">
+      <h1 className="text-4xl md:text-5xl font-bold tracking-wide text-amber-300">
         Vladyslav Storozhuk
       </h1>
       <p className="mt-3 text-lg text-slate-300">
